@@ -1,10 +1,17 @@
 # Welcome to LazyBastard
 
-[![Node.js CI](https://github.com/marborkowski//lazy-bastard/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/marborkowski/lazy-bastard/actions/workflows/node.js.yml) [![CodeQL](https://github.com/marborkowski/lazy-bastard/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/marborkowski/lazy-bastard/actions/workflows/codeql.yml)
+[![Node.js CI](https://github.com/marborkowski/colorama/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/marborkowski/colorama/actions/workflows/node.js.yml) [![CodeQL](https://github.com/marborkowski/colorama/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/marborkowski/colorama/actions/workflows/codeql.yml)
 
-**LazyBastard** is a React component that allows a child component to
-be dynamically loaded only when that component is in the user's field of view (e.g. by
-scrolling down the page). This library uses the browser's native **<a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank">Intersection Observer API</a>**. See the rest of this documentation for <a href="#compatibility">compatibility</a> for different versions of the most popular browsers.
+# Welcome to colorama!
+
+![Colorama](https://raw.githubusercontent.com/marborkowski/colorama/main/.storybook/logo.svg)
+
+**Colorama** is a simple React component that allows you to quickly
+color any text in such a way that each character of the text can have a different
+color (for example, a rainbow effect). Colorama also brings some additional features that allow you to **animate text**. For more details check out the "Example" page.
+
+<br />
+<br />
 
 ## Browsers support
 
@@ -19,31 +26,34 @@ scrolling down the page). This library uses the browser's native **<a href="http
 **YARN**
 
 ```shell
-yarn add @react-goodies/lazy-bastard
+yarn add @react-goodies/colorama
 ```
 
 **NPM**
 
 ```shell
-npm install @react-goodies/lazy-bastard --save
+npm install @react-goodies/colorama --save
 ```
 
 ## Basic implementation
 
 ```jsx
 import React from "react";
-import { LazyBastard } from "@react-goodies/lazy-bastard";
-
-// https://reactjs.org/docs/code-splitting.html#reactlazy
-const TestComponent = React.lazy(() => import("./ExampleComponent"));
+import { Colorama } from "@react-goodies/colorama";
 
 const App = () => {
   return (
-    <div>
-      <LazyBastard height={250}>
-        <TestComponent name="Eva" />
-      </LazyBastard>
-    </div>
+    <Colorama
+      colors={[
+        "#8000ff",
+        "#FD0311",
+        "#FB8201",
+        "#FFF803",
+        "#00FF05",
+        "#0580FF",
+      ]}
+      text="Hello World!"
+    />
   );
 };
 

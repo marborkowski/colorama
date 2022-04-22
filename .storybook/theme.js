@@ -1,9 +1,9 @@
 import { create } from "@storybook/theming";
-import Logo from "./lazy.svg";
+import Logo from "./logo.svg";
 
 export default create({
   base: "light",
   brandTitle: "Lazy Bastard",
-  brandUrl: "https://github.com/marborkowski/lazy-bastard",
+  brandUrl: "https://github.com/marborkowski/colorama",
   brandImage: Logo,
 });

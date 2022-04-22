@@ -12,14 +12,14 @@ export default {
     {
       file: packageJson.main,
       format: "cjs",
-      sourcemap: false,
+      sourcemap: true,
       name: "react-lib",
       assetFileNames: "[name]-[hash][extname]",
     },
     {
       file: packageJson.module,
       format: "esm",
-      sourcemap: false,
+      sourcemap: true,
       assetFileNames: "[name]-[hash][extname]",
     },
   ],
@@ -34,5 +34,5 @@ export default {
     terser(),
     styles(),
   ],
-  external: ["react", "react-dom"],
+  external: ["react", "react-dom", "is-react"],
 };

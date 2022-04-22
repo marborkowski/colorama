@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css, keyframes } from "styled-components";
-import { AnimationDirectionType, AnimationType } from "./Colorama";
+import { AnimationDirectionType, AnimationType } from "./types";
 
 export const Colorama = styled.div``;
 
@@ -80,7 +80,6 @@ const getRideKeyframes = (type: AnimationType | undefined) => {
 
   return rideLeft;
 };
-// TODO: some good animations from animate.css
 const getAnimationTime = (
   type: AnimationType | undefined,
   length: number = 0
@@ -129,7 +128,7 @@ const applyNthChildStyles = (
 export const Wrapper = styled.div<{
   colors?: string[];
   bg?: boolean;
-  ref?: React.RefObject<HTMLElement>;
+  ref?: React.RefObject<HTMLElement> | undefined;
 }>`
   position: relative;
   overflow-x: hidden;
