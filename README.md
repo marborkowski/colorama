@@ -4,7 +4,7 @@
 
 # Welcome to colorama!
 
-![Colorama](https://raw.githubusercontent.com/marborkowski/colorama/main/.storybook/logo.svg)
+![Colorama](https://raw.githubusercontent.com/marborkowski/colorama/main/.storybook/logo.svg?token=GHSAT0AAAAAABTC7KOVXVHC3RYLAKKDUDAKYTC7J5Q)
 
 **Colorama** is a simple React component that allows you to quickly
 color any text in such a way that each character of the text can have a different
