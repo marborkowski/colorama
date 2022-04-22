@@ -1,6 +1,6 @@
 # Welcome to Colorama
 
-[![Node.js CI](https://github.com/marborkowski/colorama/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/marborkowski/colorama/actions/workflows/node.js.yml) 
+[![Node.js CI](https://github.com/marborkowski/colorama/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/marborkowski/colorama/actions/workflows/node.js.yml) [![CodeQL](https://github.com/marborkowski/colorama/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/marborkowski/colorama/actions/workflows/codeql-analysis.yml)
 
 
 ![Colorama](https://raw.githubusercontent.com/marborkowski/colorama/main/.storybook/logo.svg?token=GHSAT0AAAAAABTC7KOVXVHC3RYLAKKDUDAKYTC7J5Q)
