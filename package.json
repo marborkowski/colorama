@@ -4,7 +4,18 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "repository": "git@github.com:marborkowski/colorama.git",
+  "homepage": "https://marborkowski.github.io/colorama/?path=/docs/colorama-introduction--page",
   "author": "Marcin Borkowski <marborkowski@gmail.com>",
+  "keywords": [
+    "color",
+    "colorize",
+    "rainbow",
+    "lgbt",
+    "react",
+    "component",
+    "animation",
+    "colorful text"
+  ],
   "license": "MIT",
   "scripts": {
     "test": "mocha",
